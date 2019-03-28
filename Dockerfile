@@ -17,4 +17,4 @@ RUN apk update \
 EXPOSE 9091 51413
 VOLUME /data
 
-ENTRYPOINT ["/usr/bin/transmission-daemon","--cofnig-dir","/data/config","--username=${USERNAME}","--password=${PASSWORD}"]
+ENTRYPOINT ["/usr/bin/transmission-daemon","--config-dir","/data/config","-c","/data/.watch","-w","/data/downloads","-o","--username=${USERNAME}","--password=${PASSWORD}"]
