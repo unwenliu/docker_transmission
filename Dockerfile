@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.8
 
 ENV TRANSMISSION_WEB_VERSION 1.6.0-beta2
 ENV USERNAME admin
@@ -17,4 +17,4 @@ RUN apk update \
 EXPOSE 9091 51413
 VOlUME /data
 
-ENTRYPOINT ["/usr/bin/transmission-daemon","--cofnig-dir=/data/config","--port=9091","--peerport=51413","--username=${USERNAME}","--password=${PASSWORD}"]
+ENTRYPOINT ["/usr/bin/transmission-daemon","--cofnig-dir","/data/config","--username=${USERNAME}","--password=${PASSWORD}"]
