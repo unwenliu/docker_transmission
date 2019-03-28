@@ -15,6 +15,6 @@ RUN apk update \
     && rm -rf /var/cache/apk/* /tmp/*
 
 EXPOSE 9091 51413
-VOlUME /data
+VOLUME /data
 
 ENTRYPOINT ["/usr/bin/transmission-daemon","--cofnig-dir","/data/config","--username=${USERNAME}","--password=${PASSWORD}"]
