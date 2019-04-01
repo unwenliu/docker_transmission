@@ -23,7 +23,7 @@
     "incomplete-dir": "/data/downloads",
     "incomplete-dir-enabled": false,
     "lazy-bitfield-enabled": true,
-    "lpd-enabled": false,
+    "lpd-enabled": true,
     "max-peers-global": 200,
     "message-level": 2,
     "open-file-limit": 32,
