@@ -47,7 +47,7 @@
     "proxy-enabled": false,
     "proxy-port": 80,
     "proxy-type": 0,
-    "queue-stalled-enabled": true,
+    "queue-stalled-enabled": false,
     "queue-stalled-minutes": 30,
     "ratio-limit": 2,
     "ratio-limit-enabled": false,
